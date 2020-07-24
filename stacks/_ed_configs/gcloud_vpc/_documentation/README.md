@@ -8,7 +8,7 @@
 | ------------- | -------------------------------------- | -------- | ------------ |
 | vpc_name   | name of the vpc                 | string   | None         |
 | gcloud_project      | the project id in gclouod from      | string   | None         |
-| google_application_credentials      | the location for the json file gcp      | string     | /tmp/.credentials.json         |
+| google_application_credentials      | the location for the json file gcp      | string     | /var/tmp/share/.creds/gcloud.json         |
 
 **Optional**
 
