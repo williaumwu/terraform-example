@@ -9,7 +9,9 @@ def run(stackargs):
     stack.parse.add_required(key="vpc_name")
     stack.parse.add_required(key="gcloud_project")
 
-    # this will set the GOOGLE_APPLICATION_CREDENTIALS environment variable relative to the shared docker volume
+    # this will set the GOOGLE_APPLICATION_CREDENTIALS environment variable relative 
+    # to the shared docker volume this is needed by Terraform, where will be placed 
+    # this file through shellout elasticdev:::gcloud::create-gcloud-creds-file
     stack.parse.add_required(key="google_application_credentials",default="/var/tmp/share/.creds/gcloud.json")
 
     # docker image to execute terraform with
